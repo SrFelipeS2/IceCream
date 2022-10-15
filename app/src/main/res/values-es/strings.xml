@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Curso Moviles</string>
+    <string name="text_Username">Nombre de Usuario</string>
+    <string name="text_password">Contraseña</string>
+    <string name="hint_password">Tu Contraseña</string>
+    <string name="text_Login">Acceder</string>
+    <string name="text_Welcome">Bienvenido a nuestro catalogo</string>
+    <string name="text_User">Harvey</string>
+    <string name="text_IceCones">Helados de Conos</string>
+    <string name="text_Description_Cones">Deliciosos helados de cono con pulpas de tu fruta favorita</string>
+    <string name="text_IceCups">Helados de Copas</string>
+    <string name="text_Description_IceCups">copas heladas con  mas de 8 motivos especiales</string>
+    <string name="text_Search">Buscar</string>
+    <string name="text_Settings">Configuracion</string>
+    <string name="text_Logout">Cerrar Sesion</string>
+</resources>

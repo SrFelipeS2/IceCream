@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Curso Moviles</string>
+    <string name="text_Username">Username</string>
+    <string name="text_password">Password</string>
+    <string name="hint_password">Password</string>
+    <string name="text_Login">Login</string>
+    <string name="text_Welcome">Welcome to our catalog</string>
+    <string name="text_User">Harvey</string>
+    <string name="text_IceCones">Ice Creame Cones</string>
+    <string name="text_Description_Cones">Delicious cone ice creams with pulp of your favorite fruit</string>
+    <string name="text_IceCups">Ice Creame Cups</string>
+    <string name="text_Description_IceCups">frozen cups with more than 8 special reasons</string>
+    <string name="text_Search">Search</string>
+    <string name="text_Settings">Settings</string>
+    <string name="text_Logout">Logout</string>
+</resources>
