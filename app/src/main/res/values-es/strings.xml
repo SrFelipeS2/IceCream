@@ -13,4 +13,12 @@
     <string name="text_Search">Buscar</string>
     <string name="text_Settings">Configuracion</string>
     <string name="text_Logout">Cerrar Sesion</string>
+    <string name="text_Order_Cones">Ordenar Conos</string>
+    <string name="text_Order_Cups">Ordenar Copas</string>
+    <string name="text_Buy_Chocolate">Comprar de Chocolate</string>
+    <string name="text_Buy_Cherry">Comprar de Cereza</string>
+    <string name="text_Buy_Strawberry">Comprar de Fresas</string>
+    <string name="text_Buy_Orange">Comrar de Naranjas</string>
+    <string name="text_Buy_Apple">Comprar de Manzanas</string>
+    <string name="text_Buy_Grape">Comprar de Uvas</string>
 </resources>
