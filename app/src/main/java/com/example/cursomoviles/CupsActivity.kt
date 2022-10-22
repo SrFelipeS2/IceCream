@@ -1,24 +1,21 @@
 package com.example.cursomoviles
 
 import android.content.DialogInterface
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
-import android.widget.Toast.makeText as makeText1
 
-class ConesActivity : AppCompatActivity() {
+class CupsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_cones)
+        setContentView(R.layout.activity_cups)
     }
 
-    fun onChocolate(botonChocolate: View) {
+    fun onCopadelice(botonCopadelice: View) {
 
-        val positiveButton={dialog:DialogInterface,which:Int->}
-        val negativeButton={_:DialogInterface,_:Int->}
+        val positiveButton={ dialog: DialogInterface, which:Int->}
+        val negativeButton={ _: DialogInterface, _:Int->}
         val dialog = AlertDialog.Builder(this)
             .setTitle("You are about to generate your invoice!")
             .setMessage("Do you wish to continue?")
@@ -27,10 +24,10 @@ class ConesActivity : AppCompatActivity() {
             .create() .show()
     }
 
-    fun onCherry(botonCherry: View) {
+    fun onCopaexotic(botonCopaexotic: View) {
 
-        val positiveButton={dialog:DialogInterface,which:Int->}
-        val negativeButton={_:DialogInterface,_:Int->}
+        val positiveButton={ dialog: DialogInterface, which:Int->}
+        val negativeButton={ _: DialogInterface, _:Int->}
         val dialog = AlertDialog.Builder(this)
             .setTitle("You are about to generate your invoice!")
             .setMessage("Do you wish to continue?")
@@ -39,10 +36,10 @@ class ConesActivity : AppCompatActivity() {
             .create() .show()
     }
 
-    fun onStrawberry(botonStrawberry: View) {
+    fun onCoparedfruit(botonCoparedfruit: View) {
 
-        val positiveButton={dialog:DialogInterface,which:Int->}
-        val negativeButton={_:DialogInterface,_:Int->}
+        val positiveButton={ dialog: DialogInterface, which:Int->}
+        val negativeButton={ _: DialogInterface, _:Int->}
         val dialog = AlertDialog.Builder(this)
             .setTitle("You are about to generate your invoice!")
             .setMessage("Do you wish to continue?")
@@ -51,10 +48,10 @@ class ConesActivity : AppCompatActivity() {
             .create() .show()
     }
 
-    fun onOrange(botonOrange: View) {
+    fun onCopatemptation(botonCopatemptation: View) {
 
-        val positiveButton={dialog:DialogInterface,which:Int->}
-        val negativeButton={_:DialogInterface,_:Int->}
+        val positiveButton={ dialog: DialogInterface, which:Int->}
+        val negativeButton={ _: DialogInterface, _:Int->}
         val dialog = AlertDialog.Builder(this)
             .setTitle("You are about to generate your invoice!")
             .setMessage("Do you wish to continue?")
@@ -63,10 +60,10 @@ class ConesActivity : AppCompatActivity() {
             .create() .show()
     }
 
-    fun onApple(botonApple: View) {
+    fun onCopachildish(botonCopashildish: View) {
 
-        val positiveButton={dialog:DialogInterface,which:Int->}
-        val negativeButton={_:DialogInterface,_:Int->}
+        val positiveButton={ dialog: DialogInterface, which:Int->}
+        val negativeButton={ _: DialogInterface, _:Int->}
         val dialog = AlertDialog.Builder(this)
             .setTitle("You are about to generate your invoice!")
             .setMessage("Do you wish to continue?")
@@ -75,10 +72,10 @@ class ConesActivity : AppCompatActivity() {
             .create() .show()
     }
 
-    fun onGrape(botonGrape: View) {
+    fun onCopadecorate(botonCopadecorate: View) {
 
-        val positiveButton={dialog:DialogInterface,which:Int->}
-        val negativeButton={_:DialogInterface,_:Int->}
+        val positiveButton={ dialog: DialogInterface, which:Int->}
+        val negativeButton={ _: DialogInterface, _:Int->}
         val dialog = AlertDialog.Builder(this)
             .setTitle("You are about to generate your invoice!")
             .setMessage("Do you wish to continue?")

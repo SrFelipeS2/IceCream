@@ -15,15 +15,15 @@
         android:orientation="horizontal">
         <LinearLayout
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:layout_margin="10dp"
-            android:orientation="vertical"
+            android:orientation="horizontal"
             android:gravity="center_vertical">
 
             <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="210dp"
+                android:layout_width="450dp"
+                android:layout_height="match_parent"
                 android:src="@drawable/chocolate">
 
             </ImageView>
@@ -32,22 +32,23 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="0dp"
-                android:onClick="onCones"
+                android:textSize="25sp"
+                android:onClick="onChocolate"
                 android:text="@string/text_Buy_Chocolate"/>
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
             android:gravity="center_vertical"
             android:layout_weight="1"
             android:layout_margin="12dp">
 
             <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="210dp"
+                android:layout_width="450dp"
+                android:layout_height="match_parent"
                 android:src="@drawable/cereza">
             </ImageView>
             <Button
@@ -55,7 +56,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="0dp"
-                android:onClick="onCones"
+                android:textSize="25sp"
+                android:onClick="onCherry"
                 android:text="@string/text_Buy_Cherry"/>
 
 
@@ -71,15 +73,15 @@
 
         <LinearLayout
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_margin="10dp"
             android:layout_weight="1"
-            android:orientation="vertical"
+            android:orientation="horizontal"
             android:layout_gravity="center_vertical">
 
             <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="210dp"
+                android:layout_width="450dp"
+                android:layout_height="match_parent"
                 android:src="@drawable/fresa">
 
             </ImageView>
@@ -88,23 +90,24 @@
                 android:id="@+id/btnStrawberry"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="0dp"
-                android:onClick="onCones"
+                android:layout_marginTop="100dp"
+                android:textSize="25sp"
+                android:onClick="onStrawberry"
                 android:text="@string/text_Buy_Strawberry"/>
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_margin="10dp"
             android:layout_weight="1"
-            android:orientation="vertical"
+            android:orientation="horizontal"
             android:gravity="center_vertical">
 
             <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="210dp"
+                android:layout_width="450dp"
+                android:layout_height="match_parent"
                 android:src="@drawable/naranja">
             </ImageView>
             <Button
@@ -112,7 +115,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="0dp"
-                android:onClick="onCups"
+                android:textSize="25sp"
+                android:onClick="onOrange"
                 android:text="@string/text_Buy_Orange"/>
 
 
@@ -128,15 +132,15 @@
 
         <LinearLayout
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:layout_margin="10dp"
-            android:orientation="vertical"
+            android:orientation="horizontal"
             android:gravity="center_vertical">
 
             <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="212dp"
+                android:layout_width="450dp"
+                android:layout_height="match_parent"
                 android:src="@drawable/manzana">
 
             </ImageView>
@@ -146,22 +150,23 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="0dp"
-                android:onClick="onCups"
+                android:textSize="25sp"
+                android:onClick="onApple"
                 android:text="@string/text_Buy_Apple"/>
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_margin="10dp"
             android:layout_weight="1"
-            android:orientation="vertical"
+            android:orientation="horizontal"
             android:gravity="center_vertical">
 
             <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="212dp"
+                android:layout_width="450dp"
+                android:layout_height="match_parent"
                 android:src="@drawable/uva">
             </ImageView>
             <Button
@@ -169,7 +174,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="0dp"
-                android:onClick="onCups"
+                android:textSize="25sp"
+                android:onClick="onGrape"
                 android:text="@string/text_Buy_Grape"/>
 
 

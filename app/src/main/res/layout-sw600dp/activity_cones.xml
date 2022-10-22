@@ -32,7 +32,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="0dp"
-                android:onClick="onCones"
+                android:onClick="onChocolate"
                 android:text="@string/text_Buy_Chocolate"/>
 
         </LinearLayout>
@@ -55,7 +55,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="0dp"
-                android:onClick="onCones"
+                android:onClick="onCherry"
                 android:text="@string/text_Buy_Cherry"/>
 
 
@@ -89,7 +89,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="0dp"
-                android:onClick="onCones"
+                android:onClick="onStrawberry"
                 android:text="@string/text_Buy_Strawberry"/>
 
         </LinearLayout>
@@ -112,7 +112,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="0dp"
-                android:onClick="onCups"
+                android:onClick="onOrange"
                 android:text="@string/text_Buy_Orange"/>
 
 
@@ -146,7 +146,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="0dp"
-                android:onClick="onCups"
+                android:onClick="onApple"
                 android:text="@string/text_Buy_Apple"/>
 
         </LinearLayout>
@@ -169,7 +169,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="0dp"
-                android:onClick="onCups"
+                android:onClick="onGrape"
                 android:text="@string/text_Buy_Grape"/>
 
 

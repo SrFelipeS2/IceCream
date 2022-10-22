@@ -12,8 +12,13 @@ class WelcomeActivity : AppCompatActivity() {
     }
 
     fun onCones(botonCones: View) {
-                val Intento = Intent(this,ConesActivity:: class.java)
-                startActivity(Intento)
+                val Intento_cones = Intent(this,ConesActivity:: class.java)
+                startActivity(Intento_cones)
             }
+
+    fun onCups(botonCups: View) {
+        val Intento_cones = Intent(this,CupsActivity:: class.java)
+        startActivity(Intento_cones)
+    }
 
 }

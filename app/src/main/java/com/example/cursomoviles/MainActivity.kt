@@ -7,6 +7,7 @@ import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import android.widget.EditText
+import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
 
@@ -22,13 +23,17 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun onLogin(botonLogin: View) {
-        if (edtUsername!!.text.toString()=="Harveyjnz@hotmail.com") {
-            if (edtPassword!!.text.toString()=="1234"){
+        if (edtUsername!!.text.toString()=="admin" && edtPassword!!.text.toString()=="1234" ) {
+
                 val Intento = Intent(this,WelcomeActivity:: class.java)
                  startActivity(Intento)
-
             }
-         }
+            else{
+                Toast.makeText(this, "Invalid username or password",
+                    Toast.LENGTH_LONG).show()
+            }
+
+
         }
 
 
@@ -40,10 +45,20 @@ class MainActivity : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem) = when(item.itemId){
         R.id.action_settings -> {
+            Toast.makeText(this, "configuration option temporarily disabled",
+            Toast.LENGTH_LONG).show()
             true
         }
 
         R.id.action_search -> {
+            Toast.makeText(this, "search option temporarily disabled",
+                Toast.LENGTH_LONG).show()
+            true
+        }
+
+        R.id.action_logout -> {
+            Toast.makeText(this, "logout option temporarily disabled",
+                Toast.LENGTH_LONG).show()
             true
         }
 

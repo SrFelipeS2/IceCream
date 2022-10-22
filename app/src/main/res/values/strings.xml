@@ -9,7 +9,7 @@
     <string name="text_IceCones">Ice Creame Cones</string>
     <string name="text_Description_Cones">Delicious cone ice creams with pulp of your favorite fruit</string>
     <string name="text_IceCups">Ice Creame Cups</string>
-    <string name="text_Description_IceCups">frozen cups with more than 8 special reasons</string>
+    <string name="text_Description_IceCups">ice creams with 6 special motifs</string>
     <string name="text_Search">Search</string>
     <string name="text_Settings">Settings</string>
     <string name="text_Logout">Logout</string>
@@ -21,4 +21,11 @@
     <string name="text_Buy_Orange">Buy Orange</string>
     <string name="text_Buy_Apple">Buy Apple</string>
     <string name="text_Buy_Grape">Buy Grape</string>
+    <string name="text_Buy_Delice">Buy Delice Cup</string>
+    <string name="text_Buy_Exotic">Buy Exotic Cup</string>
+    <string name="text_Buy_Redfruit">Buy Red Fruit Cup</string>
+    <string name="text_Buy_Temptation">Buy Temptation Cup</string>
+    <string name="text_Buy_Shildish">Buy Shildish Cup</string>
+    <string name="text_Buy_Decorate">Buy Decorate Cup</string>
+
 </resources>

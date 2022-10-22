@@ -9,7 +9,7 @@
     <string name="text_IceCones">Helados de Conos</string>
     <string name="text_Description_Cones">Deliciosos helados de cono con pulpas de tu fruta favorita</string>
     <string name="text_IceCups">Helados de Copas</string>
-    <string name="text_Description_IceCups">copas heladas con  mas de 8 motivos especiales</string>
+    <string name="text_Description_IceCups">helados con 6 motivos especiales</string>
     <string name="text_Search">Buscar</string>
     <string name="text_Settings">Configuracion</string>
     <string name="text_Logout">Cerrar Sesion</string>
@@ -21,4 +21,10 @@
     <string name="text_Buy_Orange">Comrar de Naranjas</string>
     <string name="text_Buy_Apple">Comprar de Manzanas</string>
     <string name="text_Buy_Grape">Comprar de Uvas</string>
+    <string name="text_Buy_Delice">Comprar Copa Delice</string>
+    <string name="text_Buy_Exotic">Comprar Copa Exotica</string>
+    <string name="text_Buy_Redfruit">Comprar Copa Frutos</string>
+    <string name="text_Buy_Temptation">Comprar Copa Tentacion</string>
+    <string name="text_Buy_Shildish">Comprar Copa Infantil</string>
+    <string name="text_Buy_Decorate">Comprar Copa Decorada</string>
 </resources>
