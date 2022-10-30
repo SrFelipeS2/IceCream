@@ -27,5 +27,11 @@
     <string name="text_Buy_Temptation">Buy Temptation Cup</string>
     <string name="text_Buy_Shildish">Buy Shildish Cup</string>
     <string name="text_Buy_Decorate">Buy Decorate Cup</string>
+    <string name="text_Print_invoice">Print Invoice</string>
+    <string name="text_Place_another_order">Place Another Order</string>
+    <string name="text_Return">Return</string>
+    <string name="text_Invoice_Fragment_Detail">Ice Cream Shop, Thank you for your purchase</string>
+    <string name="text_Total_Sale">Total Sale: $</string>
+    <string name="text_Come_back">Come Back Soom</string>
 
 </resources>

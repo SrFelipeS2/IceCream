@@ -17,7 +17,11 @@ class ConesActivity : AppCompatActivity() {
 
     fun onChocolate(botonChocolate: View) {
 
-        val positiveButton={dialog:DialogInterface,which:Int->}
+        val positiveButton={dialog:DialogInterface,which:Int->
+
+            val Intento_facturas = Intent(this,FacturasActivity:: class.java)
+            startActivity(Intento_facturas)
+        }
         val negativeButton={_:DialogInterface,_:Int->}
         val dialog = AlertDialog.Builder(this)
             .setTitle("You are about to generate your invoice!")

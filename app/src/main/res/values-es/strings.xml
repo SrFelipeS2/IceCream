@@ -27,4 +27,10 @@
     <string name="text_Buy_Temptation">Comprar Copa Tentacion</string>
     <string name="text_Buy_Shildish">Comprar Copa Infantil</string>
     <string name="text_Buy_Decorate">Comprar Copa Decorada</string>
+    <string name="text_Print_invoice">Imprimir Factura</string>
+    <string name="text_Place_another_order">Hacer Otro Pedido</string>
+    <string name="text_Return">Volver</string>
+    <string name="text_Invoice_Fragment_Detail">Heladeria Ice Creame, Gracias por su compra</string>
+    <string name="text_Total_Sale">Venta Total: $</string>
+    <string name="text_Come_back">Vuelva Pronto</string>
 </resources>
