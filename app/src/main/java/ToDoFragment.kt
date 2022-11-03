@@ -7,7 +7,7 @@ import android.widget.Button
 import androidx.fragment.app.Fragment
 import com.example.cursomoviles.R
 
-@Suppress("UNREACHABLE_CODE")
+
 class ToDoFragment : Fragment (){
 
     override fun onCreate(savedInstanceState: Bundle?){
@@ -22,7 +22,7 @@ class ToDoFragment : Fragment (){
 
         val fragmento = inflater.inflate(R.layout.fragment_to_do,container,false)
 
-        return fragmento
+
 
         val detail1: Button = fragmento.findViewById(R.id.btn_detail_1)
         val detail2: Button = fragmento.findViewById(R.id.btn_detail_2)
@@ -31,8 +31,8 @@ class ToDoFragment : Fragment (){
         detail1.setOnClickListener(View.OnClickListener {
             val datos = Bundle()
             datos.putString("tarea", resources.getString(R.string.text_Print_invoice))
-            datos.putString("hora", "10:00")
-            datos.putString("lugar", "Kwik-mart")
+            datos.putString("hora", "10:00 pm")
+            datos.putString("lugar", "Thanks for your purchase")
             activity?.getSupportFragmentManager()?.beginTransaction()
                 ?.setReorderingAllowed(true)
                 ?.replace(R.id.fragment_container_view,DetailFragment::class.java,datos,"detail")
@@ -43,8 +43,8 @@ class ToDoFragment : Fragment (){
         detail2.setOnClickListener(View.OnClickListener {
             val datos = Bundle()
             datos.putString("tarea", resources.getString(R.string.text_Place_another_order))
-            datos.putString("hora", "15:00")
-            datos.putString("lugar", "Taller")
+            datos.putString("hora", "")
+            datos.putString("lugar", "preparing to take your next order")
             activity?.getSupportFragmentManager()?.beginTransaction()
                 ?.setReorderingAllowed(true)
                 ?.replace(R.id.fragment_container_view,DetailFragment::class.java,datos,"detail")
@@ -55,13 +55,15 @@ class ToDoFragment : Fragment (){
         detail3.setOnClickListener(View.OnClickListener {
             val datos = Bundle()
             datos.putString("tarea", resources.getString(R.string.text_Return))
-            datos.putString("hora", "00:00")
-            datos.putString("lugar", "Voler")
+            datos.putString("hora", "")
+            datos.putString("lugar", "please wait...")
             activity?.getSupportFragmentManager()?.beginTransaction()
                 ?.setReorderingAllowed(true)
                 ?.replace(R.id.fragment_container_view,DetailFragment::class.java,datos,"detail")
                 ?.addToBackStack("")
                 ?.commit()
         })
+
+        return fragmento
     }
 }
