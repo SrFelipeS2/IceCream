@@ -5,7 +5,7 @@
     <string name="hint_password">Tu Contraseña</string>
     <string name="text_Login">Acceder</string>
     <string name="text_Welcome">Bienvenido a nuestro catalogo</string>
-    <string name="text_User">Harvey</string>
+    <string name="text_User">Saray</string>
     <string name="text_IceCones">Helados de Conos</string>
     <string name="text_Description_Cones">Deliciosos helados de cono con pulpas de tu fruta favorita</string>
     <string name="text_IceCups">Helados de Copas</string>
@@ -33,5 +33,6 @@
     <string name="text_Invoice_Fragment_Detail">Heladeria Ice Creame, Gracias por su compra</string>
     <string name="text_Total_Sale">Venta Total: $</string>
     <string name="text_Come_back">Vuelva Pronto</string>
+    <string name="text_Developed_by">Desarrolado por Saray</string>
 
 </resources>

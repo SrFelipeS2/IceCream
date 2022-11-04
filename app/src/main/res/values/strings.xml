@@ -5,7 +5,7 @@
     <string name="hint_password">Password</string>
     <string name="text_Login">Login</string>
     <string name="text_Welcome">Welcome to our catalog</string>
-    <string name="text_User">Harvey</string>
+    <string name="text_User">Saray</string>
     <string name="text_IceCones">Ice Creame Cones</string>
     <string name="text_Description_Cones">Delicious cone ice creams with pulp of your favorite fruit</string>
     <string name="text_IceCups">Ice Creame Cups</string>
@@ -33,5 +33,7 @@
     <string name="text_Invoice_Fragment_Detail">Ice Cream Shop, Thank you for your purchase</string>
     <string name="text_Total_Sale">Total Sale: $</string>
     <string name="text_Come_back">Come Back Soom</string>
+    <string name="text_Developed_by">Developed by Saray</string>
+
 
 </resources>
