@@ -1,12 +1,11 @@
 package com.example.cursomoviles
 
-import ToDoFragment
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
+import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.navigation.NavigationView
@@ -26,7 +25,7 @@ class FacturasActivity : AppCompatActivity() {
         val navHostFragment = supportFragmentManager.findFragmentById(R.id.fragment_container_view) as NavHostFragment
         val navController = navHostFragment.navController
 
-        appBarConfiguration = AppBarConfiguration(setOf(R.id.ToDoFragment,R.id.AboutFragment),drawerLayout)
+        appBarConfiguration = AppBarConfiguration(setOf(R.id.navToDoFragment,R.id.navAboutFragment),drawerLayout)
 
         setupActionBarWithNavController(navController,appBarConfiguration)
 
@@ -38,10 +37,17 @@ class FacturasActivity : AppCompatActivity() {
 
             supportFragmentManager.beginTransaction()
                 .setReorderingAllowed(true)
-                .add(R.id.fragment_container_view,ToDoFragment::class.java, null,"todo")
+                .add(R.id.fragment_container_view,com.example.cursomoviles.ToDoFragment::class.java, null,"todo")
                 .commit()
 
 
         }*/
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        val navHostFragment = supportFragmentManager.findFragmentById(R.id.fragment_container_view) as NavHostFragment
+        val navController = navHostFragment.navController
+
+        return navController.navigateUp(appBarConfiguration)|| super.onSupportNavigateUp()
     }
 }

@@ -1,3 +1,5 @@
+package com.example.cursomoviles
+
 import android.os.Bundle
 import android.view.AbsSavedState
 import android.view.LayoutInflater
@@ -29,6 +31,35 @@ class ToDoFragment : Fragment (){
 
         val fragmento = inflater.inflate(R.layout.fragment_to_do,container,false)
 
+        var myTaskTitles: ArrayList<String> = ArrayList()
+
+        myTaskTitles.add(resources.getString(R.string.text_Print_invoice))
+        myTaskTitles.add(resources.getString(R.string.text_Place_another_order))
+        myTaskTitles.add(resources.getString(R.string.text_Return))
+
+        var myTaskTimes: ArrayList<String> = ArrayList()
+        myTaskTimes.add("10:00 pm")
+        myTaskTimes.add("14:30")
+        myTaskTimes.add("20:00")
+
+        var myTaskPlaces: ArrayList<String> = ArrayList()
+        myTaskPlaces.add("Ice Creame")
+        myTaskPlaces.add("Ice Creame")
+        myTaskPlaces.add("Ice Creame")
+
+        var info: Bundle = Bundle()
+        info.putStringArrayList("titles",myTaskTitles)
+        info.putStringArrayList("times",myTaskTimes)
+        info.putStringArrayList("places",myTaskPlaces)
+
+
+        listRecyclerView = requireView().findViewById(R.id.recyclerTodoList)
+        myAdapter = MyTaskListAdapter(activity as AppCompatActivity,info)
+
+        listRecyclerView.setHasFixedSize(true)
+        listRecyclerView.adapter = myAdapter
+        listRecyclerView.addItemDecoration(DividerItemDecoration(context,DividerItemDecoration.VERTICAL))
+
 
 
 /*        val detail1: Button = fragmento.findViewById(R.id.btn_detail_1)
@@ -42,7 +73,7 @@ class ToDoFragment : Fragment (){
             datos.putString("lugar", "Thanks for your purchase")
             activity?.getSupportFragmentManager()?.beginTransaction()
                 ?.setReorderingAllowed(true)
-                ?.replace(R.id.fragment_container_view,DetailFragment::class.java,datos,"detail")
+                ?.replace(R.id.fragment_container_view,com.example.cursomoviles.DetailFragment::class.java,datos,"detail")
                 ?.addToBackStack("")
                 ?.commit()
         })
@@ -54,7 +85,7 @@ class ToDoFragment : Fragment (){
             datos.putString("lugar", "preparing to take your next order")
             activity?.getSupportFragmentManager()?.beginTransaction()
                 ?.setReorderingAllowed(true)
-                ?.replace(R.id.fragment_container_view,DetailFragment::class.java,datos,"detail")
+                ?.replace(R.id.fragment_container_view,com.example.cursomoviles.DetailFragment::class.java,datos,"detail")
                 ?.addToBackStack("")
                 ?.commit()
         })
@@ -66,7 +97,7 @@ class ToDoFragment : Fragment (){
             datos.putString("lugar", "please wait...")
             activity?.getSupportFragmentManager()?.beginTransaction()
                 ?.setReorderingAllowed(true)
-                ?.replace(R.id.fragment_container_view,DetailFragment::class.java,datos,"detail")
+                ?.replace(R.id.fragment_container_view,com.example.cursomoviles.DetailFragment::class.java,datos,"detail")
                 ?.addToBackStack("")
                 ?.commit()
         })*/
@@ -74,37 +105,6 @@ class ToDoFragment : Fragment (){
         return fragmento
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        var myTaskTitles: ArrayList<String> = ArrayList()
-
-        myTaskTitles.add(resources.getString(R.string.text_Print_invoice))
-        myTaskTitles.add(resources.getString(R.string.text_Place_another_order))
-        myTaskTitles.add(resources.getString(R.string.text_Return))
-
-        var myTaskTimes: ArrayList<String> = ArrayList()
-        myTaskTimes.add("10:00 pm")
-        myTaskTimes.add("")
-        myTaskTimes.add("")
-
-        var myTaskPlaces: ArrayList<String> = ArrayList()
-        myTaskPlaces.add("Ice Creame")
-        myTaskPlaces.add("Ice Creame")
-        myTaskPlaces.add("Ice Creame")
-
-        var info: Bundle = Bundle()
-        info.putStringArrayList("titles",myTaskTitles)
-        info.putStringArrayList("times",myTaskTimes)
-        info.putStringArrayList("places",myTaskPlaces)
 
 
-        listRecyclerView = requireView().findViewById(R.id.reciclerTodoList)
-        myAdapter = MyTaskListAdapter(activity as AppCompatActivity,info)
-
-        listRecyclerView.setHasFixedSize(true)
-        listRecyclerView.adapter = myAdapter
-        listRecyclerView.addItemDecoration(DividerItemDecoration(context,DividerItemDecoration.VERTICAL))
-
-
-    }
 }

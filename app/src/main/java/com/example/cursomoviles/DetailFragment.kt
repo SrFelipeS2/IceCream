@@ -1,3 +1,5 @@
+package com.example.cursomoviles
+
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -21,9 +23,9 @@ class DetailFragment : Fragment (){
         val fragmento = inflater.inflate(R.layout.fragment_detail,container,false)
 
 
-        var tarea = requireArguments().getString("tarea")
-        var hora = requireArguments().getString("hora")
-        var lugar = requireArguments().getString("lugar")
+        var tarea = requireArguments().getString("titles")
+        var hora = requireArguments().getString("times")
+        var lugar = requireArguments().getString("places")
 
         var textViewTarea:  TextView = fragmento.findViewById(R.id.textViewThank_you)
         var textViewHora:  TextView = fragmento.findViewById(R.id.textViewTotal_Sale)

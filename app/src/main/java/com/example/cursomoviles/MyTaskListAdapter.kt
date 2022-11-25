@@ -1,6 +1,5 @@
 package com.example.cursomoviles
 
-import DetailFragment
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -8,10 +7,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.drawerlayout.widget.DrawerLayout
 import androidx.recyclerview.widget.RecyclerView
-import java.lang.invoke.MethodHandleInfo
-import java.security.AccessControlContext
 
 class MyTaskListAdapter(context: AppCompatActivity, val info: Bundle):RecyclerView.Adapter<MyTaskListAdapter.MyViewHolder>() {
 
@@ -41,12 +37,12 @@ class MyTaskListAdapter(context: AppCompatActivity, val info: Bundle):RecyclerVi
             val datos = Bundle()
             datos.putString("tarea",textViewTask.text as String)
             datos.putString("hora",textViewTime.text as String)
-            datos.putString("lugar",myTaskPlaces as String)
+            datos.putString("lugar",myTaskPlaces [position])
 
-/*            context.supportFragmentManager()?.beginTransaction()
-                ?.setRecorderingAllowed(true)
-                ?.replace(R.id.fragment_container_view,DetailFragment::class.java,datos,"Detail")
-                ?.commit()*/
+            context.getSupportFragmentManager()?.beginTransaction()
+                ?.setReorderingAllowed(true)
+                ?.replace(R.id.fragment_container_view, DetailFragment::class.java,datos,"Detail")
+                ?.commit()
         }
     }
 

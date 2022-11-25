@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:gravity="center"
-    tools:context="DetailFragment">
+    tools:context=".DetailFragment">
 
     <ImageView
         android:layout_width="wrap_content"
